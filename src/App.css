@@ -40,3 +40,7 @@
 .strive-footer {
   background-color: green;
 }
+
+.strive-footer:hover {
+  font-size: 3em;
+}

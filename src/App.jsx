@@ -1,6 +1,7 @@
 import logo from './logo.svg'
 import './App.css'
 import { Footer } from './components/Footer'
+import Content from './components/Content'
 
 // your default export can be imported without the curly brackets
 // if you're importing though something that has NOT been exported as default,
@@ -22,15 +23,16 @@ const App = () => (
   // className means class. class is a reserved keyword in JS
   <div className='App'>
     <header className='App-header'>
-      {console.log('ciao!')}
+      {
+        console.log('ciao!')
+      }
       <img src={logo} className='App-logo' alt='logo' />
       <h1>Hello Strivers!</h1>
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
+      <Content title="Welcome to my page!" color="red" count={1} />
       <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
         Learn React
       </a>
+      <Content color="blue" count={5} />
       <ul className='wrong-class'>
         <li>This</li>
         <li>is</li>
